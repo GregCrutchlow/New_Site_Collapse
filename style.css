@@ -28,7 +28,7 @@ h4 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5rem ;
-    transition: background 0.5s;
+    transition: background 1.5s;
 }
 
 .accordion_btn::after {
@@ -36,6 +36,7 @@ h4 {
     font: var(--fa-font-solid);
     float: right;
     transform: scale(1.5);
+    
 }
 
 .accordion_btn_active {
