@@ -3,15 +3,33 @@
 .top_bar {
     height: 75px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
     background: white;
-    position: fixed;
-}
-.top_nav {
-    height: 75px;
-    position: fixed;
-    top: 10px;
-    .top_logo {
-        width: 10%;
-        height: auto;
+    .wrapper {
+        width: 100%;
+        .top_nav {
+            display: flex;
+            justify-content: space-between;
+            .top_logo {
+                width: 10%;
+                height: auto;
+            }
+            .nav_list {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                li {
+                    margin-left: 20px;
+                    color: $crimson;
+                    a {
+                        color: $crimson;
+                        font-family: $PT;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
     }
 }
