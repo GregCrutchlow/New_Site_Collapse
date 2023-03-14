@@ -1,0 +1,73 @@
+@use '../abstracts/variables' as *;
+
+.contact_form_container {
+    width: 55%;
+    h3 {
+        margin-top: 0;
+    }
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        label {
+            color: $black;
+        }
+        input,
+        textarea {
+            background: none;
+            margin-bottom: 20px;
+            padding: 10px 0;
+            border: none;
+            border-bottom: 2px solid $white;
+            resize: none;
+            color: $dark;
+        }
+        *:focus {
+            outline: none;
+        }
+        button {
+            background: $dark;
+            color: $white;
+            display: flex;
+            justify-content: center;
+            i {
+                margin-left: 1rem;
+                border: 2px solid $white;
+                border-radius: 50%;
+                padding: 3px;
+                font-size: 0.75rem;
+            }
+            &:hover {
+                background: $white;
+                color: $crimson;
+                transition: all 0.2s ease-in-out;
+            }
+            &:focus {
+                background: $white;
+                color: $crimson;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}
+
+.contactSocial {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    li {
+        margin-right: 1rem;
+        font-size: 2rem;
+        a {
+            color: $crimson;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                color: $dark;
+            }
+        }
+    }
+}
+
+.contact_form_container {
+    margin: 2rem 0;
+}

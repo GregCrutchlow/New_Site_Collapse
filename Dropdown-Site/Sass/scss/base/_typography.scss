@@ -4,18 +4,26 @@ html {
     font-size: 125%;
 }
 
+body {
+    font-family: $Noto;
+}
+
 h1 {
     font-family: $PT;
-    font-size: 5rem;
+    font-size: 4.25rem;
     text-transform: capitalize;
 }
 
 h2 {
-    font-family: $Noto;
+    // font-family: $Noto;
     font-size: 3.5rem;
 }
 
 h5 {
     padding: 0;
     margin: 0;
+}
+
+button {
+    font-size: 0.9rem;
 }

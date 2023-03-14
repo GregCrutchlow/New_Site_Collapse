@@ -15,3 +15,12 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     width: 90%;
     margin: 0 auto;
 }
+
+button {
+    background: $crimson;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: $white;
+    padding: 1rem 2rem;
+}
