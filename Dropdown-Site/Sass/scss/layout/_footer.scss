@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as *;
+
+footer {
+    background: $black;
+    margin: 0;
+    padding: 0;
+    // height: 50px;
+    .footer_text {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+    }
+}

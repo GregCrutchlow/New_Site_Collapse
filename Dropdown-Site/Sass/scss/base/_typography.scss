@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as *;
+
+html {
+    font-size: 125%;
+}
+
+h1 {
+    font-family: $PT;
+    font-size: 5rem;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-family: $Noto;
+    font-size: 3.5rem;
+}
+
+h5 {
+    padding: 0;
+    margin: 0;
+}

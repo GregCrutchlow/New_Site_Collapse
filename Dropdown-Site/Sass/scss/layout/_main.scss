@@ -1,0 +1,42 @@
+@use '../abstracts/variables' as *;
+
+.accordion_btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: $crimson;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem ;
+    transition: background 0.2s;
+}
+
+.accordion_btn::after {
+    content: '\f078';
+    font: var(--fa-font-solid);
+    float: right;
+    transform: scale(1.5);
+    
+}
+
+.accordion_btn_active {
+    background: $black;
+}
+
+.accordion_btn_active::after {
+    content: '\f077';
+    font: var(--fa-font-solid);
+}
+
+.accordion_content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.65s;
+    padding: 0 15px;
+    background: white;
+}

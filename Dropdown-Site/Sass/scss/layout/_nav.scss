@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+
+.top_bar {
+    height: 75px;
+    width: 100%;
+    background: white;
+    position: fixed;
+}
+.top_nav {
+    height: 75px;
+    position: fixed;
+    top: 10px;
+    .top_logo {
+        width: 10%;
+        height: auto;
+    }
+}

@@ -4,17 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google Fonts import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&family=PT+Sans+Caption:wght@400;700&display=swap"
+        rel="stylesheet">
     <!-- DevIcon Import -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!-- FontAwesome Import -->
     <script src="https://kit.fontawesome.com/d718794c03.js" crossorigin="anonymous"></script>
     <script src="./script.js" defer></script>
-    <title>Greg Developer New Site Drop Down</title>
+    <title>Greg Crutchlow Web Developer</title>
 </head>
 <body>
+    <div class="top_bar">
+        <div class="wrapper">
+            <nav class="top_nav">
+                <a href="#"><img class="top_logo" src="./assets/GregDev Logo White.png" alt="Logo of Greg Crutchlow for Web development"></a>
+                <ul class="nav_list">
+        
+                </ul>
+            </nav>
+        </div>
+    </div>
     <header>
-
+        <div class="wrapper">
+            <div class="header_container">
+                <div class="header_text">
+                    <h2>Hi! I'm Greg!</h2>
+                    <h1>A <span class="typed_text"></span><span class="cursor">&nbsp</span></h1>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <section class="about-me">
@@ -22,12 +45,11 @@
                 <button type="button" class="accordion_btn">About Me</button>
                 <div class="accordion_content">
                     <div class="wrapper about">
-                        <div class="about-me-title">
-                            <h4 class="about-title">About Me</h4>
+                        <div class="about_me_title">
                             <h2>Get To Know Me</h2>
                         </div>
-                        <div class="about-me-container">
-                            <div class="about-me-talk">
+                        <div class="about_me_container">
+                            <div class="about_me_talk">
                                 <h3 id="hi">Hi, I'm <span class="name">Greg Crutchlow</span></h3>
                                 <p>I'm a Front-End Web Developer with a passion for web development. I love creating elegant,
                                     clean and accessible websites for every user. I started my web development journey in
@@ -36,12 +58,12 @@
                                     my time, including but not limited to: anything mechanical keyboard related, Magic The
                                     Gathering, Leatherworking (beginner) and wood working.</p>
                             </div>
-                            <div class="about-me-graphic">
+                            <div class="about_me_graphic">
                                 <img src="./assets/gregProfilePic02.webp" alt="Profile picture of Greg outdoors">
                             </div>
                         </div>
-                        <div class="about-me-details">
-                            <div class="about-name">
+                        <div class="about_me_details">
+                            <div class="about_name">
                                 <h5>Name:</h5>
                                 <p>Greg Crutchlow</p>
                             </div>
@@ -139,7 +161,9 @@
     </main>
     <footer>
         <div class="wrapper">
-
+            <div class="footer_text">
+                <h5>Created and Maintained by <span>Greg Crutchlow</span>, Copyright 2023 ©</h5>
+            </div>
         </div>
     </footer>
 </body>

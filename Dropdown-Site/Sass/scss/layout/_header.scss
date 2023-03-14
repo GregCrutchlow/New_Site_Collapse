@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+
+.header_container {
+    display: flex;
+    align-items: center;
+    height: 75vh;
+    .header_text {
+
+        .typed_text {
+            color: $crimson;
+        }
+        .cursor {
+            display: inline-block;
+            width: 3px;
+            background: $black;
+            margin-left: 0.1rem;
+            animation: blink 0.75s infinite;
+        }
+    }
+}
+
+@keyframes blink {
+    0% {
+        background: $black;
+    }
+    49%{
+        background: $black;
+    }
+    50% {
+        background: transparent;
+    }
+    99% {
+        background: transparent;
+    }
+    100% {
+        background: $black;
+    }
+}
