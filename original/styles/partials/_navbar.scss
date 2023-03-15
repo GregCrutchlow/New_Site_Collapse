@@ -1,0 +1,81 @@
+@use "./variables" as *;
+
+.screenreaderText {
+	display: none;
+}
+
+.navBar {
+	min-height: 75px;
+	width: 100%;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	transition: 0.3s ease-in-out;
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo {
+		width: auto;
+		padding: 5px;
+		height: 70px;
+	}
+	.navMenu {
+		display: flex;
+		align-items: center;
+		.navItem {
+			padding-left: 1.5rem;
+			text-transform: uppercase;
+			a {
+				color: white;
+			}
+		}
+	}
+	.hamburger {
+		display: none;
+		cursor: pointer;
+	}
+	.bar {
+		display: block;
+		width: 35px;
+		height: 4px;
+		margin: 5px auto;
+		border-radius: 2px;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		background-color: white;
+	}
+}
+.navItem:nth-child(1) {
+		display: none;
+}
+
+.scrolled {
+	background: $crimson;
+	// box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.scrolledDark {
+	background: $black;
+	// box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+// .navBarDarkMode {
+// 	background: $black;
+// }
+.darkBtn {
+	width: 5rem;
+	height: 1.3rem;
+	padding: 0;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background: $white;
+	color: $dark;
+	font-size: 0.5rem;
+	transition: 0.3s ease-in-out;
+}
+
+
+
