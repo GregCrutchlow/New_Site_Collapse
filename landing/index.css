@@ -33,6 +33,20 @@ main {
     height: 50%;
 }
 
+h1 {
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+    margin: 0.5rem;
+}
+
+p {
+    margin: 0.5rem;
+}
+
 .job {
     font-family: 'PT Sans', sans-serif;
     color: #9e0020;
@@ -58,14 +72,18 @@ ul {
     border: none;
     text-transform: uppercase;
     font-family: 'Noto Sans', sans-serif;
+    transition: 0.3s ease-in-out;
+    
 }
 
 .nav_links:hover {
-    color: #3f3f3f;
+    background: #3f3f3f;
+    transform: scale(1.05);
 }
 
 .nav_links:focus {
-    color: #3f3f3f;
+    background: #3f3f3f;
+    transform: scale(1.05);
 }
 
 .social_logos {
@@ -85,8 +103,104 @@ i {
 
 i:hover {
     color: #3f3f3f;
+    transform: scale(1.15);
 }
 
 i:focus {
     color: #3f3f3f;
+    transform: scale(1.15);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .welcome_text {
+        width: 85%;
+        height: auto;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    .nav_list {
+        flex-direction: column;
+        padding: 0;
+        gap: 15px;
+    }
+    .social_list {
+        padding: 0;
+    }
+}
+
+/* Styles for screens between 481px and 767px (smartphones in landscape mode and smaller tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .welcome_text {
+        width: 80%;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.35rem;
+    }
+    .nav_list {
+        flex-direction: column;
+        padding: 0;
+        gap: 15px;
+    }
+    .social_list {
+        padding: 0;
+    }
+  /* Add your styles here */
+}
+
+/* Styles for screens between 768px and 1023px (larger tablets and small laptops) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .welcome_text {
+        width: 75%;
+        height: auto;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    .nav_list {
+        padding: 0;
+        gap: 15px;
+    }
+    .social_list {
+        padding: 0;
+    }
+  /* Add your styles here */
+}
+
+/* Styles for screens between 1024px and 1279px (larger laptops and desktops) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .welcome_text {
+        width: 70%;
+    }
+    h1 {
+        font-size: 2.75rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .website_links {
+        margin-top: 20px;
+    }
+    .nav_list {
+        padding: 0;
+        gap: 15px;
+    }
+    .social_list {
+        padding: 0;
+    }
+  /* Add your styles here */
+}
+
+/* Styles for screens larger than 1280px (larger desktop monitors) */
+@media (min-width: 1280px) {
+  /* Add your styles here */
 }
